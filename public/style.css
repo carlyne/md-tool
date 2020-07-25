@@ -1,0 +1,38 @@
+body, section {
+    min-height: 100vh;
+    height: 100%;
+}
+
+#md-editor {
+    min-height: 100vh;
+    width: 100%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    border: none;
+    overflow: auto;
+    outline: none;
+    resize: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background-color: aqua;
+}
+
+#md-view {
+    min-height: 100vh;
+    width: 100%;
+    overflow: auto;
+    border-left: 1px solid black;
+    background-color: blueviolet;
+}
+
+@media (min-width: 48rem) {
+    section {
+        display: flex;
+    }
+
+    #md-editor, #md-view  {
+        width: calc(100% / 2);
+    }
+}
